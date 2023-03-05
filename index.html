@@ -9,37 +9,70 @@
 	</head>
 	<body>
 		<section>
-			<div class="part">
-				<div class="first">dfjlf</div>
-				<div class="secound">fdsfsdllj</div>
-			</div>
 			<form id="contact-form" action="" method="POST">
-				<label for="source">Select your source:</label>
-				<input type="text" id="source" name="source" placeholder="Google Cloud Storage" />
+				<!-- Source  -->
+				<div class="part">
+					<div class="first border-right"><label for="source">Select your source:</label></div>
+					<div class="second">
+						<input type="text" id="source" name="source" placeholder="Google Cloud Storage" />
+					</div>
+				</div>
 
-				<label for="pipeline">Provide a name for pipeline:</label>
-				<input type="text" id="pipeline" name="pipeline" placeholder="e.g. cust_shop_energy_gkateway001" />
+				<!-- Pipeline  -->
+				<div class="part">
+					<div class="first border-right"><label for="pipeline">Provide a name for pipeline:</label></div>
+					<div class="second">
+						<input
+							type="text"
+							id="pipeline"
+							name="pipeline"
+							placeholder="e.g. cust_shop_energy_gkateway001"
+						/>
+					</div>
+				</div>
 
-				<label for="project">GCS project name:</label>
-				<input type="text" id="project" name="project" placeholder="project-id" />
+				<!-- Project  -->
+				<div class="part">
+					<div class="first border-right"><label for="project">GCS project name:</label></div>
+					<div class="second">
+						<input type="text" id="project" name="project" placeholder="project-id" />
+					</div>
+				</div>
 
-				<label for="bucket">GCS bucket name:</label>
-				<input type="text" id="bucket" name="bucket" placeholder="gs://your-bucket" />
+				<!-- Bucket  -->
+				<div class="part">
+					<div class="first border-right"><label for="bucket">GCS bucket name:</label></div>
+					<div class="second">
+						<input type="text" id="bucket" name="bucket" placeholder="gs://your-bucket" />
+					</div>
+				</div>
 
-				<label for="storage">Input Cloud Storage File(s):</label>
-				<input type="text" id="storage" name="storage" placeholder="GCS location of your files" />
-				<small style="color: gray; margin: -15px 0 5px 5px; display: block"
-					>Example: gs://your-bucket/your-files/01.csv</small
-				>
+				<!-- Storage  -->
+				<div class="part">
+					<div class="first border-right"><label for="storage">Input Cloud Storage File(s):</label></div>
+					<div class="second">
+						<input type="text" id="storage" name="storage" placeholder="GCS location of your files" />
+						<small style="color: gray; margin: -15px 0 5px 5px; display: block"
+							>Example: gs://your-bucket/your-files/01.csv</small
+						>
+					</div>
+				</div>
 
-				<label for="credentials">GCS credentials:</label>
-				<input type="text" id="credentials" name="credentials" />
+				<!-- Credentials  -->
+				<div class="part">
+					<div class="first border-right"><label for="credentials">GCS credentials:</label></div>
+					<div class="second"><input type="text" id="credentials" name="credentials" /></div>
+				</div>
 
-				<label for="run">Run Every:</label>
-				<input type="text" id="run" name="run" placeholder="minutes" />
-
-				<input type="submit" value="Create" />
-				<input type="reset" value="Cancel" />
+				<!-- Run  -->
+				<div class="part">
+					<div class="first border-right"><label for="run">Run Every:</label></div>
+					<div class="second"><input type="text" id="run" name="run" placeholder="minutes" /></div>
+				</div>
+				<div class="part">
+					<div class="first"><input type="submit" value="Create" /></div>
+					<div class="second"><input type="reset" value="Cancel" /></div>
+				</div>
 
 				<div id="form-errors"></div>
 			</form>

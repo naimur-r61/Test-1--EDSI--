@@ -1,5 +1,5 @@
 form {
-	max-width: 600px;
+	max-width: 500px;
 	margin: 0 auto;
 	padding: 20px;
 	border: 1px solid #ccc;
@@ -13,19 +13,20 @@ label {
 }
 
 input[type="text"] {
-	width: 100%;
-	padding: 10px;
+	width: 80%;
+	padding-top: 7px;
+	padding-bottom: 5px;
 	margin-bottom: 15px;
-	border: 1px solid #ccc;
 	border-radius: 5px;
 	font-size: 16px;
+	border: none;
+	background-color: #f9f9f9;
 }
 
 input[type="submit"],
 input[type="reset"] {
 	padding: 10px 20px;
-	background-color: #007bff;
-	color: #fff;
+	background-color: #70a7dc;
 	border: none;
 	border-radius: 5px;
 	font-size: 16px;
@@ -34,7 +35,7 @@ input[type="reset"] {
 
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-	background-color: #0062cc;
+	background-color: #59a1e4;
 }
 /* Error  */
 .error {
@@ -42,4 +43,23 @@ input[type="reset"]:hover {
 	font-weight: 600;
 	margin: -10px 0 5px 5px;
 	font-size: 14px;
+}
+
+/* Grid  */
+.part {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 1fr 1.5fr;
+	/* align-items: center; */
+}
+
+.first {
+	text-align: end;
+}
+
+.border-right {
+	border-right: 1px solid black;
+	padding-right: 3px;
+	margin-bottom: 15px;
+	margin-top: 5px;
 }
