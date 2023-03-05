@@ -67,6 +67,10 @@ form.addEventListener('submit', function (event) {
    if (valid) {
       // Replace this with your own code to submit the form data
       alert('Form submitted successfully!');
+      const result = JSON.stringify({ source, pipeline, project, bucket, storage, credentials, run });
+
+      localStorage.setItem("formData", result)
+      console.log(result);
       form.reset();
    }
 });
