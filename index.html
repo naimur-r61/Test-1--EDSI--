@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<title>Form</title>
+	</head>
+	<body>
+		<section>
+			<div class="part">
+				<div class="first">dfjlf</div>
+				<div class="secound">fdsfsdllj</div>
+			</div>
+			<form id="contact-form" action="" method="POST">
+				<label for="source">Select your source:</label>
+				<input type="text" id="source" name="source" placeholder="Google Cloud Storage" />
+
+				<label for="pipeline">Provide a name for pipeline:</label>
+				<input type="text" id="pipeline" name="pipeline" placeholder="e.g. cust_shop_energy_gkateway001" />
+
+				<label for="project">GCS project name:</label>
+				<input type="text" id="project" name="project" placeholder="project-id" />
+
+				<label for="bucket">GCS bucket name:</label>
+				<input type="text" id="bucket" name="bucket" placeholder="gs://your-bucket" />
+
+				<label for="storage">Input Cloud Storage File(s):</label>
+				<input type="text" id="storage" name="storage" placeholder="GCS location of your files" />
+
+				<label for="credentials">GCS credentials:</label>
+				<input type="text" id="credentials" name="credentials" />
+
+				<label for="run">Run Every:</label>
+				<input type="text" id="run" name="run" placeholder="minutes" />
+
+				<input type="submit" value="Create" />
+				<input type="reset" value="Cancel" />
+
+				<div id="form-errors"></div>
+			</form>
+		</section>
+
+		<!-- JavaScript File  -->
+		<script src="app.js"></script>
+	</body>
+</html>
