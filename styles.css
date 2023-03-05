@@ -6,6 +6,7 @@ form {
 	border-radius: 5px;
 }
 
+/* Label  */
 label {
 	display: block;
 	margin-bottom: 5px;
@@ -35,7 +36,7 @@ input[type="submit"]:hover,
 input[type="reset"]:hover {
 	background-color: #0062cc;
 }
-
+/* Error  */
 .error {
 	color: #ec021a;
 	font-weight: 600;
